@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
-  constructor() { }
+  @Input() params: string;
 
-  @Input('type') type: string;
+  constructor() { }
 
   ngOnInit() {
   }
